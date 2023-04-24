@@ -9,10 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@SpringBootTest
 public class TrelloMapperTestSuite {
 
-    private final TrelloMapper trelloMapper = new TrelloMapper();
+    @Autowired
+    private TrelloMapper trelloMapper;
 
     @Test
     void testMapToList(){
